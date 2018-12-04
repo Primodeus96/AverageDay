@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{328c2848-2a36-4f2e-a077-46f5c5855af8}">
+        <property name="assetPath">
+            <value>BONG Bell Timer Hit 10.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.1518367346938776</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f9180098-0c25-42c3-bbe7-5b04c3ee8228}</destination>
+        </relationship>
+    </object>
+</objects>
