@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{f96778e2-61f0-48c6-ba62-6876e52e9410}">
+        <property name="name">
+            <value>sawPadVolume</value>
+        </property>
+        <relationship name="folder">
+            <destination>{43c66953-214d-4dbb-860f-c9c0b6cc967e}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{51c45a26-bc15-4e0b-8459-86d7f6000d64}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{51c45a26-bc15-4e0b-8459-86d7f6000d64}">
+        <property name="maximum">
+            <value>10</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

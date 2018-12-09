@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f140cfd9-bc21-4eee-91ea-1edfee936814}">
+        <property name="assetPath">
+            <value>bensound-newdawn.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>313.46938775510205</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f9180098-0c25-42c3-bbe7-5b04c3ee8228}</destination>
+        </relationship>
+    </object>
+</objects>

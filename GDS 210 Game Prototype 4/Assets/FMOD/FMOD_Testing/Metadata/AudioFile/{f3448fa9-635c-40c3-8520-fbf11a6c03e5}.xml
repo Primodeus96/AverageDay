@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f3448fa9-635c-40c3-8520-fbf11a6c03e5}">
+        <property name="assetPath">
+            <value>MaleNo.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>96</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.70970833333333339</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{f9180098-0c25-42c3-bbe7-5b04c3ee8228}</destination>
+        </relationship>
+    </object>
+</objects>

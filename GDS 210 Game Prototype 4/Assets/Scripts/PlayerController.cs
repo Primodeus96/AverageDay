@@ -13,8 +13,10 @@ public class PlayerController : MonoBehaviour
 	private Animator Anim;
 	private bool PlayerMovement;
 	private Rigidbody2D PlayerRigidbody;
-	
-	
+    public bool hasNecessary;
+    private GameObject storyItem;
+    public GameObject storyEnd;
+    
 
 
 	// Use this for initialization
@@ -22,6 +24,8 @@ public class PlayerController : MonoBehaviour
 	{
 		Anim = GetComponent<Animator>();
 		PlayerRigidbody = GetComponent<Rigidbody2D>();
+        hasNecessary = false;
+        storyItem = GameObject.FindGameObjectWithTag("StoryItem");
 	}
 
 	// Update is called once per frame
@@ -63,10 +67,33 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 
+        if(Vector2.Distance(this.transform.position, storyItem.transform.position)<3f){
+            if(Input.GetKeyDown(KeyCode.E)){
+                hasNecessary = true;
+                storyItem.SetActive(false);
+            }
+
+        }
+
+        if(StoryEndScript.necessaryTrigger == true){
+            if (hasNecessary == true)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    storyEnd.SetActive(false);
+                }
+            }
+        }
+
+        
 		//Anim.SetFloat("Move X", Input.GetAxisRaw("Horizontal"));
 		//Anim.SetFloat("Move Y", Input.GetAxisRaw("Vertical"));
 		//Anim.SetBool("Player Moving", PlayerMovement);
 		//Anim.SetFloat("Last Move X", LastMovement.x);
 		//Anim.SetFloat("Last Move Y", LastMovement.y);
 	}
+
+   
+    
+
 }
